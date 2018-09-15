@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Crystal Collector</title>
+
+  <style type="text/css">
+
+    body {
+      background-image: url(assets/images/body.jpg);
+    }
+
+    #blue-crystal {
+      height: 200px;
+      width: 200px;
+    }
+
+    #clear-crystal {
+      height: 200px;
+      width: 200px;
+    }
+
+    #purple-crystal {
+      height: 200px;
+      width: 200px;
+    }
+
+    #opal {
+      height: 200px;
+      width: 200px;
+    }
+  </style>
+
+</head>
+<body>
+
+  
+
+  <h1>Number to Guess: <span id="number-to-guess"></span></h1>
+
+  <div>
+    Total Score <span id = "totalscore"></span>
+  </div>
+
+  <div>
+    Total Wins <span id = "total wins"></span>
+  </div>
+
+  <div>
+    Total Losses <span id = "total losses"></span>
+  </div>
+
+  <!-- Note that this div is now empty. We will fill it dynamically -->
+  <div id="crystals">
+    <img src = "assets/images/blue crystal.jpg" id = "blue-crystal">
+    <img src = "assets/images/Clear Crystal.jpg" id = "clear-crystal">
+    <img src = "assets/images/Purple Crystal.jpg" id = "purple-crystal">
+    <img src = "assets/images/Opal.jpg" id = "opal">
+  </div>
+
+
+  <!-- JAVASCRIPT  -->
+  <!-- ========================================= -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type = "text/javascript" src = "assets/javascript/game.js"></script>
+</body>
+</html>
