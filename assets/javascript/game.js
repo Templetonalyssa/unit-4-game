@@ -28,7 +28,7 @@ $(document).ready(function() {
 
 $("#number-to-guess").text(targetNumber);
 
-// //   // This time, our click event applies to just one crysta
+// On click event for each crystal image
 
 $("#blue-crystal").on("click", function() {
 
@@ -50,14 +50,34 @@ $("#blue-crystal").on("click", function() {
     totalScore();
  })
 
-// All of the same game win-lose logic applies. So the rest remains unchanged.
+ $("#clear-crystal").on("click", function() {
+
+  var clearCrystalValue = ($(this).attr("data-clearcrystalvalue"));
+     clearCrystalValue = parseInt(clearCrystalValue);
+    counter += clearCrystalValue;
+    console.log(counter);
+    console.log("clear crystal =" + clearCrystalValue);
+    totalScore();
+ })
+
+ $("#opal").on("click", function() {
+
+  var opalNumber = ($(this).attr("data-opalvalue"));
+     opalNumber = parseInt(opalNumber);
+    counter += opalNumber;
+    console.log(counter);
+    console.log("opal =" + opalNumber);
+    totalScore();
+ })
+
+
 var totalScore =  function() {
     $("#totalscore").text(counter);
 
    if (counter === targetNumber) {
    alert("You win!");
    reset();
-   wins++
+   wins++;
    }
 
      else if (counter >= targetNumber) {
