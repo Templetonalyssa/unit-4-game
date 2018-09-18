@@ -1,0 +1,51 @@
+
+body {
+  background-image: url(../images/body.jpg);
+  font-family: 'Great Vibes', cursive;
+}
+
+#blue-crystal {
+  height: 200px;
+  width: 200px;
+  border-radius: 20px;
+}
+
+#clear-crystal {
+  height: 200px;
+  width: 200px;
+  border-radius: 20px;
+}
+
+#purple-crystal {
+  height: 200px;
+  width: 200px;
+  border-radius: 20px;
+}
+
+#opal {
+  height: 200px;
+  width: 200px;
+  border-radius: 20px;
+}
+
+#totalscorediv, #totalwinsdiv, #totallossesdiv {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+    margin-left: 600px;
+}
+
+h1{
+   margin-left: 600px;
+}
+
+#crystals {
+    margin-left: 350px;
+}
+
+#instructionsdiv {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+    margin-left: 300px;
+}

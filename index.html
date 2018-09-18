@@ -3,50 +3,31 @@
 <head>
   <title>Crystal Collector</title>
 
-  <style type="text/css">
-
-    body {
-      background-image: url(assets/images/body.jpg);
-    }
-
-    #blue-crystal {
-      height: 200px;
-      width: 200px;
-    }
-
-    #clear-crystal {
-      height: 200px;
-      width: 200px;
-    }
-
-    #purple-crystal {
-      height: 200px;
-      width: 200px;
-    }
-
-    #opal {
-      height: 200px;
-      width: 200px;
-    }
-  </style>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
 
 </head>
 <body>
+  
+  <div id = "instructionsdiv">
+    <p>There are four crystals below. By clicking on a crystal you will add a random amount of points to your total score.</p>
+    <p>Match your total score to the random number and you win! Exceed the score and you lose. </p>
 
+    </div>
   
 
   <h1>Number to Guess: <span id="number-to-guess"></span></h1>
 
-  <div>
-    Total Score <span id = "totalscore"></span>
+  <div id= "totalscorediv">
+    Total Score: <span id = "totalscore"></span>
   </div>
 
-  <div>
-    Total Wins <span id = "totalwins"></span>
+  <div id = "totalwinsdiv">
+    Total Wins: <span id = "totalwins"></span>
   </div>
 
-  <div>
-    Total Losses <span id = "totallosses"></span>
+  <div id = "totallossesdiv">
+    Total Losses: <span id = "totallosses"></span>
   </div>
 
   <!-- Note that this div is now empty. We will fill it dynamically -->
