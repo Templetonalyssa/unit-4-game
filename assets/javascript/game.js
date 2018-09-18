@@ -76,7 +76,7 @@ $("#blue-crystal").on("click", function() {
 var totalScore =  function() {
     $("#totalscore").text(counter);
    if (counter === targetNumber) {
-   alert("You win!");
+   alert("You win! Way to go!");
    reset();
    wins++;
    console.log(wins);
@@ -84,7 +84,7 @@ var totalScore =  function() {
    }
 
      else if (counter >= targetNumber) {
-       alert("You lose!!");
+       alert("You lose! Don't fret, try again!");
        reset();
        losses++;
        console.log(losses);

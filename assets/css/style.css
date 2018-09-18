@@ -31,7 +31,7 @@ body {
 #totalscorediv, #totalwinsdiv, #totallossesdiv {
     font-size: 30px;
     font-weight: bold;
-    padding: 10px;
+    padding: 5px;
     margin-left: 600px;
 }
 
@@ -41,11 +41,19 @@ h1{
 
 #crystals {
     margin-left: 350px;
+    
 }
 
 #instructionsdiv {
     font-size: 30px;
     font-weight: bold;
-    padding: 10px;
     margin-left: 300px;
+    
+}
+
+#crystalcollector{
+    font-size: 60px;
+    margin-left: 550px;
+    font-weight: bold;
+    background-image: url(http://i361.photobucket.com/albums/oo54/crackysparkles/sparkles/av19l.gif);
 }
