@@ -1,12 +1,11 @@
 $(document).ready(function() {
 
-    console.log ("game starting");
-
   var targetNumber = Math.floor(Math.random()*102)+19;
 
   var counter = 0;
   var wins = 0;
   var losses = 0;
+  
 
   var blueCrystal = $("#blue-crystal");
   var purpleCrystal = $("#purple-crystal");
@@ -20,13 +19,16 @@ $(document).ready(function() {
   var purpleCrystalNumber = Math.floor(Math.random()*12) +1;
   var opalNumber = Math.floor(Math.random()*12)+1;
   
-
+  //linking the images with random values
     blueCrystal.attr("data-bluecrystalvalue", blueCrystalNumber);
     clearCrystal.attr("data-clearcrystalvalue", clearCrystalNumber);
     purpleCrystal.attr("data-purplecrystalvalue", purpleCrystalNumber);
     opal.attr ("data-opalvalue", opalNumber);
 
-$("#number-to-guess").text(targetNumber);
+    $("#number-to-guess").text(targetNumber);
+   // $("#totalwins").text(wins);
+    //$("#totallosses").text(losses);
+
 
 // On click event for each crystal image
 
@@ -73,17 +75,21 @@ $("#blue-crystal").on("click", function() {
 
 var totalScore =  function() {
     $("#totalscore").text(counter);
-
    if (counter === targetNumber) {
    alert("You win!");
    reset();
    wins++;
+   console.log(wins);
+   $("#totalwins").text(wins);
    }
 
      else if (counter >= targetNumber) {
        alert("You lose!!");
        reset();
        losses++;
+       console.log(losses);
+       $("#totallosses").text(losses);
+
      }
     }
 
